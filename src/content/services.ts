@@ -9,7 +9,7 @@ export const servicesContent = {
         title: 'Demolizioni complete',
         description:
           "Servizi completi di demolizione per qualsiasi struttura con un unico referente, dalla pianificazione alla consegna del sito. Gestiamo l'intero processo eliminando complessità e stress per il cliente.",
-        image: '/images/horizontal-1.jpg',
+        image: '/images/img/demolition-excavator-action.jpg',
         link: '/servizi/demolizioni',
         features: [
           'Demolizioni civili',
@@ -25,7 +25,7 @@ export const servicesContent = {
         title: 'Strip-out',
         description:
           "Eseguiamo servizi di strip-out per preparare gli spazi alla ristrutturazione o riqualificazione, minimizzando l'impatto sulle strutture adiacenti e garantendo la massima efficienza.",
-        image: '/images/horizontal-2.jpg',
+        image: '/images/img/facade-dismantling-workers-metal-cutting.jpg',
         link: '/servizi/strip-out',
         features: [
           'Rimozione di elementi non strutturali',
@@ -41,7 +41,7 @@ export const servicesContent = {
         title: 'Bonifiche ambientali',
         description:
           "Ci occupiamo di bonifiche ambientali e gestione sicura di materiali speciali, incluso l'amianto, con un focus sulla sicurezza, la conformità normativa e la tutela dell'ambiente.",
-        image: '/images/horizontal-3.jpg',
+        image: '/images/img/environmental-cleanup.jpg',
         link: '/servizi/bonifiche',
         features: [
           'Bonifica amianto',
@@ -52,6 +52,22 @@ export const servicesContent = {
           "Soluzioni rispettose dell'ambiente",
         ],
       },
+      {
+        id: 'smaltimento-macchinari-industriali',
+        title: 'Smaltimento Macchinari Industriali',
+        description:
+          'Servizio completo per lo smaltimento di macchinari e impianti industriali obsoleti o dismessi, con valorizzazione dei beni e rispetto delle normative ambientali.',
+        image: '/images/img/abandoned-industrial-machine-hall-large-space.png',
+        link: '/servizi/smaltimento-macchinari-industriali',
+        features: [
+          'Sopralluogo e valutazione gratuita',
+          'Bonifica e messa in sicurezza',
+          'Smontaggio professionale',
+          'Trasporto e smaltimento',
+          'Valorizzazione beni dismessi',
+          'Conformità normativa garantita',
+        ],
+      },
     ],
   },
   detail: {
@@ -59,32 +75,32 @@ export const servicesContent = {
       id: 'demolizioni',
       title: 'Demolizioni complete',
       subtitle: 'Soluzioni complete con un unico referente',
-      heroImage: '/images/horizontal-1.jpg',
+      heroImage: '/images/img/demolition-excavator-action.jpg',
       description:
-        'Desmare offre servizi completi di demolizione per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla pianificazione iniziale alla consegna finale del sito, garantendo sicurezza, efficienza e conformità normativa.',
+        'Desmare offre <span class="font-semibold text-primary">servizi completi di demolizione</span> per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla <span class="font-semibold text-primary">pianificazione iniziale</span> alla <span class="font-semibold text-primary">consegna finale del sito</span>, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e conformità normativa</span>.',
       benefits: [
         {
           title: 'Un unico referente',
           description:
-            "Gestiamo l'intero progetto, eliminando complessità e stress per il cliente",
+            'Gestiamo l\'<span class="font-semibold text-primary">intero progetto</span>, eliminando <span class="font-semibold text-primary">complessità e stress</span> per il cliente',
           icon: 'user',
         },
         {
           title: 'Sicurezza garantita',
           description:
-            'Rispetto rigoroso delle normative con un focus sulla sicurezza di persone e ambiente',
+            'Rispetto rigoroso delle <span class="font-semibold text-primary">normative</span> con un focus sulla <span class="font-semibold text-primary">sicurezza di persone e ambiente</span>',
           icon: 'shield',
         },
         {
           title: 'Gestione completa dei rifiuti',
           description:
-            'Ci assumiamo la responsabilità legale e operativa di tutti i rifiuti generati',
+            'Ci assumiamo la <span class="font-semibold text-primary">responsabilità legale e operativa</span> di tutti i <span class="font-semibold text-primary">rifiuti generati</span>',
           icon: 'recycle',
         },
         {
           title: 'Movimento terra integrato',
           description:
-            'Prepariamo il sito per la fase successiva con servizi di movimento terra professionali',
+            'Prepariamo il sito per la fase successiva con servizi di <span class="font-semibold text-primary">movimento terra professionali</span>',
           icon: 'truck',
         },
       ],
@@ -152,20 +168,20 @@ export const servicesContent = {
       id: 'strip-out',
       title: 'Servizi di Strip-out',
       subtitle: 'Preparazione professionale per ristrutturazioni',
-      heroImage: '/images/horizontal-2.jpg',
+      heroImage: '/images/img/facade-dismantling-workers-metal-cutting.jpg',
       description:
-        'Servizi di strip-out di precisione per la preparazione degli spazi alla ristrutturazione o riqualificazione, con minimo impatto sulle strutture adiacenti.',
+        'Servizi di <span class="font-semibold text-primary">strip-out di precisione</span> per la preparazione degli spazi alla <span class="font-semibold text-primary">ristrutturazione o riqualificazione</span>, con <span class="font-semibold text-primary">minimo impatto</span> sulle strutture adiacenti.',
       benefits: [
         {
           title: 'Precisione e cura',
           description:
-            'Rimozione selettiva degli elementi con massima attenzione ai dettagli',
+            'Rimozione selettiva degli elementi con <span class="font-semibold text-primary">massima attenzione ai dettagli</span>',
           icon: 'precision',
         },
         {
           title: 'Minimizzazione dei disturbi',
           description:
-            "Tecniche e procedure che riducono al minimo l'impatto sulle aree circostanti",
+            'Tecniche e procedure che riducono al <span class="font-semibold text-primary">minimo l\'impatto</span> sulle aree circostanti',
           icon: 'shield',
         },
         {
@@ -176,7 +192,8 @@ export const servicesContent = {
         },
         {
           title: 'Consegna professionale',
-          description: "Consegna dell'area completata e pronta all'uso",
+          description:
+            'Consegna dell\'area <span class="font-semibold text-primary">completata e pronta all\'uso</span>',
           icon: 'check',
         },
       ],
@@ -244,32 +261,32 @@ export const servicesContent = {
       id: 'bonifiche',
       title: 'Bonifiche Ambientali',
       subtitle: "Soluzioni sicure e conformi per la tutela dell'ambiente",
-      heroImage: '/images/horizontal-3.jpg',
+      heroImage: '/images/img/environmental-cleanup.jpg',
       description:
-        "Bonifiche ambientali e gestione sicura di materiali speciali, incluso amianto. Servizi specializzati con focus su sicurezza e tutela dell'ambiente.",
+        'Bonifiche ambientali e <span class="font-semibold text-primary">gestione sicura di materiali speciali</span>, incluso <span class="font-semibold text-primary">amianto</span>. Servizi specializzati con focus su <span class="font-semibold text-primary">sicurezza e tutela dell\'ambiente</span>.',
       benefits: [
         {
           title: 'Sicurezza garantita',
           description:
-            'Procedure rigorose per la protezione di persone e ambiente',
+            'Procedure rigorose per la <span class="font-semibold text-primary">protezione di persone e ambiente</span>',
           icon: 'shield',
         },
         {
           title: 'Conformità normativa',
           description:
-            'Rispetto di tutte le normative vigenti per la gestione dei rifiuti pericolosi',
+            'Rispetto di tutte le <span class="font-semibold text-primary">normative vigenti</span> per la gestione dei <span class="font-semibold text-primary">rifiuti pericolosi</span>',
           icon: 'check',
         },
         {
           title: 'Certificazioni complete',
           description:
-            'Documentazione dettagliata e certificazioni per ogni intervento',
+            '<span class="font-semibold text-primary">Documentazione dettagliata e certificazioni</span> per ogni intervento',
           icon: 'certificate',
         },
         {
           title: 'Soluzioni sostenibili',
           description:
-            'Approccio eco-sostenibile alla gestione dei rifiuti pericolosi',
+            'Approccio <span class="font-semibold text-primary">eco-sostenibile</span> alla gestione dei <span class="font-semibold text-primary">rifiuti pericolosi</span>',
           icon: 'leaf',
         },
       ],
@@ -329,6 +346,93 @@ export const servicesContent = {
         title: 'Hai bisogno di servizi di bonifica?',
         description:
           'Contattaci per un preventivo personalizzato o per una consulenza gratuita',
+        buttonText: 'Richiedi un preventivo',
+      },
+    },
+    'smaltimento-macchinari-industriali': {
+      id: 'smaltimento-macchinari-industriali',
+      title: 'Smaltimento Macchinari Industriali',
+      subtitle: 'Soluzioni complete per la gestione dei tuoi beni dismessi',
+      heroImage:
+        '/images/img/abandoned-industrial-machine-hall-large-space.png',
+      description:
+        'Desmare offre un <span class="font-semibold text-primary">servizio completo</span> per lo smaltimento di <span class="font-semibold text-primary">macchinari e impianti industriali</span> obsoleti o dismessi. Dallo <span class="font-semibold text-primary">smontaggio in loco</span> al trasporto e al conferimento in <span class="font-semibold text-primary">centri autorizzati</span>, gestiamo ogni fase con la massima professionalità, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e pieno rispetto delle normative ambientali</span>.',
+      benefits: [
+        {
+          title: 'Servizio completo',
+          description:
+            'Ci occupiamo di <span class="font-semibold text-primary">ogni aspetto</span>, dallo <span class="font-semibold text-primary">smontaggio alla documentazione finale</span>, offrendoti un <span class="font-semibold text-primary">unico partner affidabile</span> e sollevandoti da ogni complessità.',
+          icon: 'user',
+        },
+        {
+          title: 'Valorizzazione dei beni',
+          description:
+            'Acquistiamo i macchinari o le strutture industriali dismesse, riconoscendo il loro <span class="font-semibold text-primary">valore di recupero</span> e trasformando un potenziale costo in un\'<span class="font-semibold text-primary">opportunità economica</span>.',
+          icon: 'coins',
+        },
+        {
+          title: 'Ottimizzazione',
+          description:
+            'Grazie alla nostra <span class="font-semibold text-primary">esperienza e pianificazione</span>, riduciamo al minimo i <span class="font-semibold text-primary">tempi di fermo e gli imprevisti</span>, completando le operazioni in modo <span class="font-semibold text-primary">rapido ed efficiente</span>.',
+          icon: 'clock',
+        },
+        {
+          title: 'Impatto ridotto',
+          description:
+            'Privilegiamo il <span class="font-semibold text-primary">recupero e il riciclo dei materiali</span>, minimizzando la quantità di rifiuti destinati a discarica e contribuendo attivamente alla <span class="font-semibold text-primary">sostenibilità ambientale</span>.',
+          icon: 'leaf',
+        },
+      ],
+      process: [
+        {
+          step: 1,
+          title: 'Sopralluogo e pianificazione',
+          description:
+            'Ogni intervento inizia con un sopralluogo gratuito presso la tua sede. I nostri tecnici valuteranno i macchinari e i materiali da smaltire, identificando eventuali componenti pericolose e definendo le modalità operative più adatte.',
+        },
+        {
+          step: 2,
+          title: 'Bonifica e messa in sicurezza',
+          description:
+            "Prima dello smontaggio, mettiamo in sicurezza l'area di lavoro e i macchinari. Questo include lo scollegamento di impianti elettrici e fluidici, la segregazione della zona e la bonifica di eventuali componenti pericolose (es. oli, refrigeranti, amianto).",
+        },
+        {
+          step: 3,
+          title: 'Smontaggio e rimozione',
+          description:
+            'Il nostro team specializzato esegue lo smontaggio dei macchinari e impianti direttamente presso la tua sede. Utilizziamo attrezzature professionali e personale qualificato per rimuovere in modo efficiente sia grandi impianti che piccole apparecchiature.',
+        },
+        {
+          step: 4,
+          title: 'Trasporto e smaltimento',
+          description:
+            'Organizziamo il trasporto dei materiali dal tuo sito agli impianti di smaltimento. I materiali raccolti vengono conferiti a impianti autorizzati per il trattamento finale. Ove possibile privilegiamo il recupero e il riciclo.',
+        },
+      ],
+      categories: [
+        {
+          title: 'Macchinari produttivi',
+          description:
+            'Smaltimento di macchinari per la produzione industriale, linee di assemblaggio e attrezzature specializzate',
+          image: '/images/horizontal-1.jpg',
+        },
+        {
+          title: 'Impianti industriali',
+          description:
+            'Demolizione e smaltimento di impianti complessi, strutture industriali e sistemi di produzione',
+          image: '/images/horizontal-2.jpg',
+        },
+        {
+          title: 'Apparecchiature elettriche',
+          description:
+            'Gestione specializzata di apparecchiature elettriche ed elettroniche secondo normative RAEE',
+          image: '/images/horizontal-3.jpg',
+        },
+      ],
+      cta: {
+        title: 'Hai macchinari industriali da smaltire?',
+        description:
+          'Contattaci per un sopralluogo gratuito e un preventivo personalizzato',
         buttonText: 'Richiedi un preventivo',
       },
     },

@@ -93,6 +93,18 @@ export const metadataConfig = {
         'bonifica ambientale',
       ],
     },
+    'services/smaltimento-macchinari-industriali': {
+      title: 'Smaltimento Macchinari Industriali',
+      description:
+        'Servizio completo per lo smaltimento di macchinari e impianti industriali obsoleti. Dalla valutazione alla bonifica, dallo smontaggio al trasporto, con valorizzazione dei beni dismessi.',
+      keywords: [
+        'smaltimento macchinari industriali',
+        'demolizione impianti',
+        'bonifica macchinari',
+        'recupero materiali industriali',
+        'smaltimento attrezzature',
+      ],
+    },
     'chi-siamo': {
       title: 'Chi Siamo',
       description:

@@ -122,6 +122,57 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
             />
           </svg>
         );
+      case 'coins':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-primary"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        );
+      case 'clock':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-primary"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        );
+      case 'leaf':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-primary"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+            />
+          </svg>
+        );
       default:
         return (
           <svg
@@ -153,12 +204,11 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="mb-4 text-4xl font-bold md:text-5xl">
+              <h1 className="mb-4 text-4xl font-bold text-balance md:text-5xl">
                 {service.title}
               </h1>
-              <p className="mb-6 text-xl text-primary">{service.subtitle}</p>
-              <p className="mb-8 text-lg text-text-secondary">
-                {service.description}
+              <p className="mb-6 text-xl text-primary text-balance">{service.subtitle}</p>
+              <p className="mb-8 text-lg text-text-secondary text-balance" dangerouslySetInnerHTML={{ __html: service.description }}>
               </p>
               <button
                 onClick={() => setIsModalOpen(true)}
@@ -191,7 +241,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h2 className="mb-12 text-center text-3xl font-bold">
+          <h2 className="mb-12 text-center text-3xl font-bold text-balance">
             I vantaggi delle nostre soluzioni
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -207,8 +257,8 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   {renderIcon(benefit.icon)}
                 </div>
-                <h3 className="mb-3 text-xl font-bold">{benefit.title}</h3>
-                <p className="text-text-secondary">{benefit.description}</p>
+                <h3 className="mb-3 text-xl font-bold text-balance">{benefit.title}</h3>
+                <p className="text-text-secondary text-balance" dangerouslySetInnerHTML={{ __html: benefit.description }}></p>
               </motion.div>
             ))}
           </div>
@@ -222,7 +272,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h2 className="mb-12 text-center text-3xl font-bold">
+          <h2 className="mb-12 text-center text-3xl font-bold text-balance">
             Il nostro processo
           </h2>
           <div className="relative">
@@ -247,8 +297,8 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                         : 'md:order-2 md:pl-12'
                     }`}
                   >
-                    <h3 className="mb-2 text-xl font-bold">{step.title}</h3>
-                    <p className="text-text-secondary">{step.description}</p>
+                    <h3 className="mb-2 text-xl font-bold text-balance">{step.title}</h3>
+                    <p className="text-text-secondary text-balance">{step.description}</p>
                   </div>
 
                   <div className={index % 2 === 0 ? 'md:order-2' : ''}></div>
@@ -266,7 +316,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h2 className="mb-12 text-center text-3xl font-bold">
+          <h2 className="mb-12 text-center text-3xl font-bold text-balance">
             Tipologie di intervento
           </h2>
           <div className="space-y-16">
@@ -290,8 +340,8 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-4 text-2xl font-bold">{category.title}</h3>
-                  <p className="text-lg text-text-secondary">
+                  <h3 className="mb-4 text-2xl font-bold text-balance">{category.title}</h3>
+                  <p className="text-lg text-text-secondary text-balance">
                     {category.description}
                   </p>
                 </div>
@@ -308,7 +358,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
           transition={{ duration: 0.6 }}
           className="mb-24 rounded-2xl bg-primary/5 p-8 md:p-12"
         >
-          <h2 className="mb-10 text-center text-3xl font-bold">
+          <h2 className="mb-10 text-center text-3xl font-bold text-balance">
             Certificazioni e autorizzazioni
           </h2>
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
@@ -335,7 +385,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                     d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                   />
                 </svg>
-                <span className="font-medium">{certification}</span>
+                <span className="font-medium text-balance">{certification}</span>
               </motion.div>
             ))}
           </div>
