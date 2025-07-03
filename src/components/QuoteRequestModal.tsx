@@ -289,6 +289,9 @@ export default function QuoteRequestModal({
                     <option value="Bonifica ambientale">
                       Bonifica ambientale
                     </option>
+                    <option value="Smaltimento-macchinari-industriali">
+                      Smaltimento macchinari industriali
+                    </option>
                     <option value="Altro">Altro</option>
                   </select>
                   {errors.service && (
