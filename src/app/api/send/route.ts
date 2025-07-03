@@ -2,9 +2,10 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// mittente e destinatario admin in un’unica costante così lo tocchi solo qui
-const FROM = 'Desmare <lorenzoboschi39@gmail.com>';
-const ADMIN = 'lorenzoboschi39@gmail.com';
+// FROM è l'indirizzo email da cui arriva la conferma di ricezione del preventivo al cliente
+// ADMIN è l'indirizzo email a cui arrivano le richieste di preventivo
+const FROM = `"${process.env.NEXT_PUBLIC_SITE_NAME}" <${process.env.ADMIN_EMAIL}>`;
+const ADMIN = `"${process.env.NEXT_PUBLIC_SITE_NAME}" <${process.env.ADMIN_EMAIL}>`;
 
 export async function POST(request: Request) {
   console.log('API Route: Inizio elaborazione richiesta');
