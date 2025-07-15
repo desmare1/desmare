@@ -57,10 +57,10 @@ export default function AboutPreview() {
           >
             <div className="relative h-[400px] overflow-hidden rounded-lg shadow-xl">
               <Image
-                src="/images/img/facade-dismantling-workers-metal-cutting.jpg"
+                src="/img/chi-siamo.jpg"
                 alt="Team Desmare"
                 fill
-                className="object-cover"
+                className="object-cover object-right"
               />
             </div>
             <div className="absolute -bottom-5 -right-5 -z-10 h-40 w-40 rounded-full bg-primary/10 blur-2xl"></div>

@@ -5,7 +5,7 @@ export const heroContent = {
     services: [
       { name: 'Demolizioni', acronym: 'De', href: '/servizi/demolizioni' },
       { name: 'Smaltimenti', acronym: 'Sma', href: '/servizi' },
-      { name: 'Recupero Materiali', acronym: 'Re', href: '/servizi' }
+      { name: 'Recupero Materiali', acronym: 'Re', href: '/servizi' },
     ],
   },
   description:
@@ -20,28 +20,28 @@ export const heroContent = {
   },
   images: {
     default: [
-      '/images/img/demolition-excavator-action.jpg',
-      '/images/img/construction-debris-dumpster-residential.jpg.jpg',
-      '/images/img/metal-scrap-after-industrial-demolition.jpg',
-      '/images/img/abandoned-factory-interior-structure.jpg.jpg',
+      '/img/demolizioni_01.jpg',
+      '/img/demolizioni_04.jpg',
+      '/img/demolizioni_03.jpg',
+      '/img/demolizioni_05.jpg',
     ],
     demolizioni: [
-      '/images/img/demolition-excavator-action.jpg',
-      '/images/img/partially-destroyed-residential-building.jpg',
-      '/images/img/interior-structural-demolition-rebars.jpg',
-      '/images/img/facade-dismantling-workers-metal-cutting.jpg',
+      '/img/demolizioni_01.jpg',
+      '/img/demolizioni_04.jpg',
+      '/img/demolizioni_03.jpg',
+      '/img/demolizioni_05.jpg',
     ],
     smaltimenti: [
-      '/images/img/construction-debris-dumpster-residential.jpg.jpg',
-      '/images/img/waste-loading-into-dumpster-truck.jpg',
-      '/images/img/construction-site-drone-view-earthmoving.jpg',
-      '/images/img/abandoned-industrial-machine-hall-large-space.png',
+      '/img/smaltimento_01.jpg',
+      '/img/smaltimento_04.jpg',
+      '/img/smaltimento_03.jpg',
+      '/img/smaltimento_02.jpg',
     ],
     'recupero materiali': [
-      '/images/img/metal-scrap-after-industrial-demolition.jpg',
-      '/images/img/roof-deconstruction-wood-shingles-and-rafters.jpg',
-      '/images/img/abandoned-industrial-site-old-machinery.jpg',
-      '/images/img/facade-dismantling-workers-metal-cutting.jpg',
+      '/img/recupero_01.jpg',
+      '/img/recupero_04.jpg',
+      '/img/recupero_03.jpg',
+      '/img/recupero_02.jpg',
     ],
   },
 };

@@ -7,7 +7,7 @@ const featuredProject = {
   title: 'Strip-out Controllato nel Centro di Terni',
   description:
     'Strip-out controllato nel centro della città di Terni per conto del cliente Superconti. Intervento di precisione in area urbana densamente popolata con minimo impatto sui cittadini.',
-  image: '/images/img/stripout-terni.jpeg',
+  image: '/img/stripout-terni.jpeg',
   category: 'strip-out',
   client: 'Superconti',
   stats: [
