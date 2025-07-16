@@ -55,16 +55,19 @@ export default function Hero() {
               >
                 De
               </motion.span>
+              <motion.span className="text-bg-dark">.</motion.span>
               <motion.span
                 className={`transition-colors duration-100 ${getAcronymColor('Sma')}`}
               >
-                .Sma
+                Sma
               </motion.span>
+              <motion.span className="text-bg-dark">.</motion.span>
               <motion.span
                 className={`transition-colors duration-100 ${getAcronymColor('Re')}`}
               >
-                .Re.
+                Re
               </motion.span>
+              <motion.span className="text-bg-dark">.</motion.span>
             </h1>
 
             <h2 className="mb-6 text-balance text-3xl font-bold leading-tight sm:text-5xl lg:text-5xl">
