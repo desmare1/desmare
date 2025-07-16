@@ -9,12 +9,12 @@ export const servicesContent = {
         title: 'Demolizioni complete',
         description:
           "Servizi completi di demolizione per qualsiasi struttura con un unico referente, dalla pianificazione alla consegna del sito. Gestiamo l'intero processo eliminando complessità e stress per il cliente.",
-        image: '/images/img/demolition-excavator-action.jpg',
+        image: '/img/demolizioni-complete.jpg',
         link: '/servizi/demolizioni',
         features: [
           'Demolizioni civili',
           'Demolizioni industriali',
-          'Demolizioni speciali',
+          'Demolizioni specialistiche',
           'Gestione completa del progetto',
           'Unico punto di contatto',
           'Conformità normativa garantita',
@@ -25,7 +25,7 @@ export const servicesContent = {
         title: 'Strip-out',
         description:
           "Eseguiamo servizi di strip-out per preparare gli spazi alla ristrutturazione o riqualificazione, minimizzando l'impatto sulle strutture adiacenti e garantendo la massima efficienza.",
-        image: '/images/img/facade-dismantling-workers-metal-cutting.jpg',
+        image: '/img/strip-out.jpg',
         link: '/servizi/strip-out',
         features: [
           'Rimozione di elementi non strutturali',
@@ -41,7 +41,7 @@ export const servicesContent = {
         title: 'Bonifiche ambientali',
         description:
           "Ci occupiamo di bonifiche ambientali e gestione sicura di materiali speciali, incluso l'amianto, con un focus sulla sicurezza, la conformità normativa e la tutela dell'ambiente.",
-        image: '/images/img/environmental-cleanup.jpg',
+        image: '/img/servizio-bonifiche.jpg',
         link: '/servizi/bonifiche',
         features: [
           'Bonifica amianto',
@@ -54,10 +54,10 @@ export const servicesContent = {
       },
       {
         id: 'smaltimento-macchinari-industriali',
-        title: 'Smaltimento Macchinari Industriali',
+        title: 'Smaltimento macchinari industriali',
         description:
           'Servizio completo per lo smaltimento di macchinari e impianti industriali obsoleti o dismessi, con valorizzazione dei beni e rispetto delle normative ambientali.',
-        image: '/images/img/abandoned-industrial-machine-hall-large-space.png',
+        image: '/img/rottami-metallici.jpg',
         link: '/servizi/smaltimento-macchinari-industriali',
         features: [
           'Sopralluogo e valutazione gratuita',
@@ -75,7 +75,7 @@ export const servicesContent = {
       id: 'demolizioni',
       title: 'Demolizioni complete',
       subtitle: 'Soluzioni complete con un unico referente',
-      heroImage: '/images/img/demolition-excavator-action.jpg',
+      heroImage: '/img/demolizioni_01.jpg',
       description:
         'De.Sma.Re offre <span>servizi completi di demolizione</span> per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla <span>pianificazione iniziale</span> alla <span>consegna finale del sito</span>, garantendo <span>sicurezza, efficienza e conformità normativa</span>.',
       benefits: [
@@ -134,20 +134,20 @@ export const servicesContent = {
         {
           title: 'Demolizioni civili',
           description:
-            'Demolizione di edifici residenziali, commerciali e pubblici con tecniche appropriate per contesti urbani e spazi limitati',
-          image: '/images/horizontal-1.jpg',
+            'Eseguiamo demolizioni civili su edifici residenziali, scuole, uffici e strutture pubbliche o private. Operiamo in contesti urbani e spazi limitati, applicando tecniche a basso impatto ambientale e garantendo la sicurezza di persone e strutture adiacenti.',
+          image: '/img/demolizioni-civ.jpg',
         },
         {
           title: 'Demolizioni industriali',
           description:
-            'Demolizione di stabilimenti produttivi, capannoni e strutture industriali con attenzione alla gestione di materiali speciali e contaminati',
-          image: '/images/horizontal-2.jpg',
+            'Siamo specializzati nella demolizione di impianti produttivi, capannoni, silos e infrastrutture industriali, gestiamo con attenzione tutte le fasi, dalla disattivazione impianti alla bonifica dei materiali contaminati',
+          image: '/img/demo-industriali.jpg',
         },
         {
-          title: 'Demolizioni speciali',
+          title: 'Demolizioni specialistiche',
           description:
-            'Interventi complessi che richiedono tecniche particolari come demolizioni controllate, tagli di precisione o smantellamento selettivo',
-          image: '/images/horizontal-3.jpg',
+            'Affrontiamo demolizioni complesse in contesti vincolati come centri storici, aree sensibili, edifici monumentali o in prossimità di infrastrutture attive.  Ogni intervento è preceduto da analisi strutturali e piani di sicurezza su misura. Questo approccio è ideale per ridurre rischi, tempi e costi nei contesti ad alta complessità tecnica',
+          image: '/img/demolizioni_01.jpg',
         },
       ],
       // certifications: [
@@ -168,7 +168,7 @@ export const servicesContent = {
       id: 'strip-out',
       title: 'Servizi di Strip-out',
       subtitle: 'Preparazione professionale per ristrutturazioni',
-      heroImage: '/images/img/facade-dismantling-workers-metal-cutting.jpg',
+      heroImage: '/img/strip.jpg',
       description:
         'Servizi di <span>strip-out di precisione</span> per la preparazione degli spazi alla <span>ristrutturazione o riqualificazione</span>, con <span>minimo impatto</span> sulle strutture adiacenti.',
       benefits: [
@@ -228,19 +228,19 @@ export const servicesContent = {
           title: 'Strip-out commerciale',
           description:
             'Rimozione di elementi non strutturali in spazi commerciali e uffici',
-          image: '/images/horizontal-2.jpg',
+          image: '/img/strip-out-commerciale.jpg',
         },
         {
           title: 'Strip-out industriale',
           description:
             "Preparazione di spazi industriali per ristrutturazione o cambio destinazione d'uso",
-          image: '/images/horizontal-3.jpg',
+          image: '/img/strip-out-industriale.jpg',
         },
         {
           title: 'Strip-out residenziale',
           description:
             'Rimozione di elementi in spazi residenziali con attenzione ai dettagli',
-          image: '/images/horizontal-1.jpg',
+          image: '/img/strip-out-residenziale.jpg',
         },
       ],
       // certifications: [
@@ -261,7 +261,7 @@ export const servicesContent = {
       id: 'bonifiche',
       title: 'Bonifiche Ambientali',
       subtitle: "Soluzioni sicure e conformi per la tutela dell'ambiente",
-      heroImage: '/images/img/environmental-cleanup.jpg',
+      heroImage: '/img/bonifiche.jpg',
       description:
         "Bonifiche ambientali e <span>gestione sicura di materiali speciali</span>, incluso <span>amianto</span>. Servizi specializzati con focus su <span>sicurezza e tutela dell'ambiente</span>.",
       benefits: [
@@ -320,28 +320,29 @@ export const servicesContent = {
         {
           title: 'Bonifica amianto',
           description:
-            'Rimozione e smaltimento di materiali contenenti amianto',
-          image: '/images/horizontal-3.jpg',
+            'Siamo specializzati nella bonifica amianto sia in matrice compatta che friabile, con operazioni che comprendono mappatura, rimozione, incapsulamento e confinamento. Operiamo nel pieno rispetto della normativa vigente garantendo la massima sicurezza per le persone e l’ambiente',
+          image: '/img/bonifica-amianto.jpg',
         },
         {
-          title: 'Gestione materiali speciali',
+          title: 'Bonifica di siti contaminati e inquinati',
           description:
-            'Trattamento e smaltimento di materiali speciali e contaminati',
-          image: '/images/horizontal-1.jpg',
+            'Interveniamo su terreni e siti industriali dismessi o inquinati da idrocarburi, metalli pesanti o composti organici pericolosi. Garantiamo l’intero iter tecnico e amministrativo: dalla caratterizzazione ambientale iniziale alla restituzione dell’area in condizioni di sicurezza e conformità ambientale',
+          image: '/img/bonifica-contaminati.jpg',
         },
         {
-          title: 'Bonifica ambientale',
-          description: 'Interventi di bonifica e ripristino ambientale',
-          image: '/images/horizontal-2.jpg',
+          title: 'Bonifica falde e sedimenti',
+          description:
+            'Effettuiamo interventi di bonifica ambientale per falde acquifere e sedimenti contaminati da sostanze chimiche, metalli pesanti, idrocarburi o solventi clorurati. ',
+          image: '/img/bonifica-falde.jpg',
         },
       ],
-      certifications: [
-        'Albo Nazionale Gestori Ambientali',
-        'Categoria 8 - Intermediazione rifiuti',
-        'ISO 9001 - Gestione Qualità',
-        'ISO 14001 - Gestione Ambientale',
-        'ISO 45001 - Sicurezza sul lavoro',
-      ],
+      // certifications: [
+      //   'Albo Nazionale Gestori Ambientali',
+      //   'Categoria 8 - Intermediazione rifiuti',
+      //   'ISO 9001 - Gestione Qualità',
+      //   'ISO 14001 - Gestione Ambientale',
+      //   'ISO 45001 - Sicurezza sul lavoro',
+      // ],
       cta: {
         title: 'Hai bisogno di servizi di bonifica?',
         description:
@@ -351,10 +352,9 @@ export const servicesContent = {
     },
     'smaltimento-macchinari-industriali': {
       id: 'smaltimento-macchinari-industriali',
-      title: 'Smaltimento Macchinari Industriali',
+      title: 'Smaltimento macchinari industriali',
       subtitle: 'Soluzioni complete per la gestione dei tuoi beni dismessi',
-      heroImage:
-        '/images/img/abandoned-industrial-machine-hall-large-space.png',
+      heroImage: '/img/rottami-metallici.jpg',
       description:
         'De.Sma.Re offre un <span>servizio completo</span> per lo smaltimento di <span>macchinari e impianti industriali</span> obsoleti o dismessi. Dallo <span>smontaggio in loco</span> al trasporto e al conferimento in <span>centri autorizzati</span>, gestiamo ogni fase con la massima professionalità, garantendo <span>sicurezza, efficienza e pieno rispetto delle normative ambientali</span>.',
       benefits: [
@@ -411,22 +411,16 @@ export const servicesContent = {
       ],
       categories: [
         {
-          title: 'Macchinari produttivi',
+          title: 'Recupero di rottami metallici',
           description:
-            'Smaltimento di macchinari per la produzione industriale, linee di assemblaggio e attrezzature specializzate',
-          image: '/images/horizontal-1.jpg',
+            'Effettuiamo il recupero e il riciclo di rottami metallici provenienti da demolizioni industriali, dismissioni impianti e linee di produzione. Gestiamo acciaio, ferro, rame, alluminio e altri metalli in modo conforme alle normative ambientali, assicurando tracciabilità completa e valorizzazione economica del materiale recuperato.',
+          image: '/img/smaltimento-macchinari.jpg',
         },
         {
-          title: 'Impianti industriali',
+          title: 'Demolizione di impianti industriali',
           description:
-            'Demolizione e smaltimento di impianti complessi, strutture industriali e sistemi di produzione',
-          image: '/images/horizontal-2.jpg',
-        },
-        {
-          title: 'Apparecchiature elettriche',
-          description:
-            'Gestione specializzata di apparecchiature elettriche ed elettroniche secondo normative RAEE',
-          image: '/images/horizontal-3.jpg',
+            'Offriamo un servizio completo per lo smontaggio, il trasporto e lo smaltimento certificato di macchinari industriali, linee produttive e attrezzature specializzate. Interveniamo in contesti produttivi dismessi o in ristrutturazione, garantendo sicurezza, rispetto delle normative (ADR e ambientali), e gestione documentale ',
+          image: '/img/smaltimento-industriale.jpg',
         },
       ],
       cta: {

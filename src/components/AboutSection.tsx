@@ -7,12 +7,8 @@ export default function AboutSection() {
       <div className="container-custom">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <h1 className="mb-6 text-4xl font-bold md:text-5xl">Chi Siamo</h1>
-          <p className="text-xl text-text-secondary">
-            <span className="font-semibold text-primary">De.sma.re</span> è
-            un'azienda specializzata in{' '}
-            <span className="font-semibold">demolizioni</span>,{' '}
-            <span className="font-semibold">smaltimento rifiuti</span> e{' '}
-            <span className="font-semibold">recupero materiali</span>. Una{' '}
+          <p className="text-text-primary text-balance md:text-xl">
+            De.Sma.re proviene da una{' '}
             <span className="font-medium">tradizione familiare</span> nel
             settore che affonda le radici in{' '}
             <span className="font-medium">provincia di Arezzo</span>.
@@ -50,7 +46,7 @@ export default function AboutSection() {
           </div>
           <div className="relative h-[400px] overflow-hidden rounded-lg shadow-xl">
             <Image
-              src="/images/img/abandoned-factory-interior-structure.jpg.jpg"
+              src="/img/chi-siamo_02.jpg"
               alt="Team De.Sma.Re"
               fill
               className="object-cover"
@@ -61,7 +57,7 @@ export default function AboutSection() {
         <div className="mb-24 grid items-center gap-12 md:grid-cols-2">
           <div className="relative order-1 h-[400px] overflow-hidden rounded-lg shadow-xl md:order-none">
             <Image
-              src="/images/img/facade-dismantling-workers-metal-cutting.jpg"
+              src="/img/chi-siamo_01.jpg"
               alt="I nostri valori"
               fill
               className="object-cover"

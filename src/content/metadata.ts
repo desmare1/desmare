@@ -89,12 +89,12 @@ export const metadataConfig = {
       keywords: [
         'bonifica amianto',
         'bonifiche ambientali',
-        'gestione materiali speciali',
-        'bonifica ambientale',
+        'Bonifica di siti contaminati e inquinati',
+        'Bonifica falde e sedimenti',
       ],
     },
     'services/smaltimento-macchinari-industriali': {
-      title: 'Smaltimento Macchinari Industriali',
+      title: 'Smaltimento macchinari industriali',
       description:
         'Servizio completo per lo smaltimento di macchinari e impianti industriali obsoleti. Dalla valutazione alla bonifica, dallo smontaggio al trasporto, con valorizzazione dei beni dismessi.',
       keywords: [
