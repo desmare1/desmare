@@ -41,7 +41,7 @@ export default function StatsSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-text-secondary"
           >
-            Desmare offre servizi professionali con l'obiettivo di unire
+            De.Sma.Re offre servizi professionali con l'obiettivo di unire
             efficienza, sicurezza e sostenibilità ambientale in ogni progetto.
           </motion.p>
         </div>

@@ -26,9 +26,9 @@ export default function CTASection() {
               Hai un progetto in mente?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-white/90 md:text-xl">
-              Contattaci oggi per una consulenza gratuita e scopri come Desmare
-              può offrirti soluzioni sicure, efficienti e sostenibili per le tue
-              esigenze di demolizione e recupero materiali.
+              Contattaci oggi per una consulenza gratuita e scopri come
+              De.Sma.Re può offrirti soluzioni sicure, efficienti e sostenibili
+              per le tue esigenze di demolizione e recupero materiali.
             </p>
 
             <div className="flex flex-col justify-center gap-4 sm:flex-row">

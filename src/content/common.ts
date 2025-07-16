@@ -1,7 +1,7 @@
 export const commonContent = {
   header: {
     logo: {
-      alt: 'Desmare Logo',
+      alt: 'De.Sma.Re Logo',
       src: '/images/logo.png',
     },
     menu: [
@@ -17,7 +17,7 @@ export const commonContent = {
   },
   footer: {
     company: {
-      name: 'Desmare',
+      name: 'De.Sma.Re',
       description:
         'Soluzioni professionali per demolizioni e recupero materiali',
       address: 'Via Example 123, 20100 Milano',

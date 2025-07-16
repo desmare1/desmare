@@ -77,7 +77,7 @@ export const servicesContent = {
       subtitle: 'Soluzioni complete con un unico referente',
       heroImage: '/images/img/demolition-excavator-action.jpg',
       description:
-        'Desmare offre <span class="font-semibold text-primary">servizi completi di demolizione</span> per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla <span class="font-semibold text-primary">pianificazione iniziale</span> alla <span class="font-semibold text-primary">consegna finale del sito</span>, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e conformità normativa</span>.',
+        'De.Sma.Re offre <span class="font-semibold text-primary">servizi completi di demolizione</span> per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla <span class="font-semibold text-primary">pianificazione iniziale</span> alla <span class="font-semibold text-primary">consegna finale del sito</span>, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e conformità normativa</span>.',
       benefits: [
         {
           title: 'Un unico referente',
@@ -356,7 +356,7 @@ export const servicesContent = {
       heroImage:
         '/images/img/abandoned-industrial-machine-hall-large-space.png',
       description:
-        'Desmare offre un <span class="font-semibold text-primary">servizio completo</span> per lo smaltimento di <span class="font-semibold text-primary">macchinari e impianti industriali</span> obsoleti o dismessi. Dallo <span class="font-semibold text-primary">smontaggio in loco</span> al trasporto e al conferimento in <span class="font-semibold text-primary">centri autorizzati</span>, gestiamo ogni fase con la massima professionalità, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e pieno rispetto delle normative ambientali</span>.',
+        'De.Sma.Re offre un <span class="font-semibold text-primary">servizio completo</span> per lo smaltimento di <span class="font-semibold text-primary">macchinari e impianti industriali</span> obsoleti o dismessi. Dallo <span class="font-semibold text-primary">smontaggio in loco</span> al trasporto e al conferimento in <span class="font-semibold text-primary">centri autorizzati</span>, gestiamo ogni fase con la massima professionalità, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e pieno rispetto delle normative ambientali</span>.',
       benefits: [
         {
           title: 'Servizio completo',

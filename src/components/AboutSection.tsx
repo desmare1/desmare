@@ -8,12 +8,14 @@ export default function AboutSection() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <h1 className="mb-6 text-4xl font-bold md:text-5xl">Chi Siamo</h1>
           <p className="text-xl text-text-secondary">
-            <span className="font-semibold text-primary">De.sma.re</span> è un'azienda specializzata in{' '}
+            <span className="font-semibold text-primary">De.sma.re</span> è
+            un'azienda specializzata in{' '}
             <span className="font-semibold">demolizioni</span>,{' '}
             <span className="font-semibold">smaltimento rifiuti</span> e{' '}
             <span className="font-semibold">recupero materiali</span>. Una{' '}
-            <span className="font-medium">tradizione familiare</span> nel settore
-            che affonda le radici in <span className="font-medium">provincia di Arezzo</span>.
+            <span className="font-medium">tradizione familiare</span> nel
+            settore che affonda le radici in{' '}
+            <span className="font-medium">provincia di Arezzo</span>.
           </p>
         </div>
 
@@ -22,24 +24,34 @@ export default function AboutSection() {
             <h2 className="mb-6 text-3xl font-bold">Le Nostre Origini</h2>
             <p className="mb-6 text-lg text-text-secondary">
               La nostra esperienza nasce da una{' '}
-              <span className="font-semibold">tradizione familiare</span> sviluppatasi per generazioni
-              in provincia di Arezzo, dove gestivamo un{' '}
-              <span className="font-medium">impianto di recupero ferro</span>. Questa eredità ci ha
-              trasmesso la passione per il <span className="font-medium">recupero e valorizzazione dei materiali</span>.
+              <span className="font-semibold">tradizione familiare</span>{' '}
+              sviluppatasi per generazioni in provincia di Arezzo, dove
+              gestivamo un{' '}
+              <span className="font-medium">impianto di recupero ferro</span>.
+              Questa eredità ci ha trasmesso la passione per il{' '}
+              <span className="font-medium">
+                recupero e valorizzazione dei materiali
+              </span>
+              .
             </p>
             <p className="mb-6 text-lg text-text-secondary">
-              Oggi <span className="font-semibold text-primary">De.sma.re</span> è il{' '}
-              <span className="font-semibold">partner affidabile</span> di imprese e pubbliche amministrazioni.
-              Garantiamo <span className="font-medium">cantieri sicuri</span> e{' '}
-              <span className="font-medium">soluzioni complete</span>, sempre conformi alle normative.
-              Offriamo anche <span className="font-medium">smontaggio e acquisto materiali industriali</span>,
-              seguendo i principi dell'<span className="font-semibold">economia circolare</span>.
+              Oggi <span className="font-semibold text-primary">De.sma.re</span>{' '}
+              è il <span className="font-semibold">partner affidabile</span> di
+              imprese e pubbliche amministrazioni. Garantiamo{' '}
+              <span className="font-medium">cantieri sicuri</span> e{' '}
+              <span className="font-medium">soluzioni complete</span>, sempre
+              conformi alle normative. Offriamo anche{' '}
+              <span className="font-medium">
+                smontaggio e acquisto materiali industriali
+              </span>
+              , seguendo i principi dell'
+              <span className="font-semibold">economia circolare</span>.
             </p>
           </div>
           <div className="relative h-[400px] overflow-hidden rounded-lg shadow-xl">
             <Image
               src="/images/img/abandoned-factory-interior-structure.jpg.jpg"
-              alt="Team Desmare"
+              alt="Team De.Sma.Re"
               fill
               className="object-cover"
             />
@@ -157,7 +169,7 @@ export default function AboutSection() {
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-3xl font-bold">Il Nostro Approccio</h2>
             <p className="mb-8 text-balance text-lg text-text-secondary">
-              Desmare si distingue per un approccio{' '}
+              De.Sma.Re si distingue per un approccio{' '}
               <span className="font-bold">completo</span> e{' '}
               <span className="font-bold">personalizzato</span> ad ogni
               progetto. Comprendiamo che ogni lavoro ha esigenze uniche, e

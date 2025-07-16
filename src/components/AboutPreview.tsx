@@ -17,7 +17,7 @@ export default function AboutPreview() {
           >
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">Chi Siamo</h2>
             <p className="mb-6 text-lg text-text-secondary">
-              Desmare è una giovane azienda specializzata in demolizioni,
+              De.Sma.Re è una giovane azienda specializzata in demolizioni,
               smaltimento di rifiuti e recupero materiali. La nostra missione è
               fornire servizi professionali che uniscono efficienza, sicurezza e
               sostenibilità.
@@ -58,7 +58,7 @@ export default function AboutPreview() {
             <div className="relative h-[400px] overflow-hidden rounded-lg shadow-xl">
               <Image
                 src="/img/chi-siamo.jpg"
-                alt="Team Desmare"
+                alt="Chi siamo"
                 fill
                 className="object-cover object-right"
               />

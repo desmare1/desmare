@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 const defaults = {
-  siteName: 'Desmare',
+  siteName: 'De.Sma.Re',
   separator: '|',
   description: 'Soluzioni professionali per demolizioni e recupero materiali',
   baseUrl: 'https://desmare.it',
@@ -28,7 +28,7 @@ export const metadataConfig = {
   pages: {
     home: {
       title:
-        'Desmare - Servizi Professionali di Demolizione e Gestione Ambientale',
+        'De.Sma.Re - Servizi Professionali di Demolizione e Gestione Ambientale',
       description:
         'Servizi professionali di demolizione, strip-out, gestione rifiuti e bonifica amianto. Soluzioni sostenibili e conformi alle normative per progetti di demolizione e riqualificazione.',
       keywords: [
@@ -44,7 +44,7 @@ export const metadataConfig = {
             url: '/images/og-image.jpg',
             width: 1200,
             height: 630,
-            alt: 'Desmare - Servizi Professionali di Demolizione',
+            alt: 'De.Sma.Re - Servizi Professionali di Demolizione',
           },
         ],
       },
@@ -108,7 +108,7 @@ export const metadataConfig = {
     'chi-siamo': {
       title: 'Chi Siamo',
       description:
-        'Scopri la storia di Desmare, la nostra missione e i valori che ci guidano nel settore delle demolizioni e della gestione ambientale.',
+        'Scopri la storia di De.Sma.Re, la nostra missione e i valori che ci guidano nel settore delle demolizioni e della gestione ambientale.',
       keywords: [
         'chi siamo',
         'storia aziendale',
@@ -167,7 +167,7 @@ export const metadataConfig = {
     'coming-soon': {
       title: 'Prossimamente',
       description:
-        'Pagina in costruzione. Torna presto per scoprire le novità di Desmare.',
+        'Pagina in costruzione. Torna presto per scoprire le novità di De.Sma.Re.',
       keywords: ['in costruzione', 'prossimamente', 'novità', 'aggiornamenti'],
     },
   } as Record<string, PageMetadata>,

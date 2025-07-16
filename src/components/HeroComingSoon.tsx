@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import QuoteRequestModal from "./QuoteRequestModal";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import QuoteRequestModal from './QuoteRequestModal';
 
 export default function HeroComingSoon() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function HeroComingSoon() {
     const originalStyle = window.getComputedStyle(document.body).overflow;
 
     // Prevent scrolling
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
 
     // Re-enable scrolling when component unmounts
     return () => {
@@ -23,37 +23,37 @@ export default function HeroComingSoon() {
   }, []);
 
   return (
-    <section className="relative h-screen flex flex-col justify-between">
+    <section className="relative flex h-screen flex-col justify-between">
       <div className="container-custom relative z-10 flex-grow py-8 sm:py-16">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {" "}
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          {' '}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-construction-text">
-              Desmare
+            <h1 className="text-4xl font-bold tracking-tight text-construction-text sm:text-5xl lg:text-6xl">
+              De.Sma.Re
             </h1>
 
-            <h2 className="text-balance text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight mt-6 mb-6">
-              Soluzioni professionali per{" "}
-              <span className="text-primary">demolizioni</span> e{" "}
+            <h2 className="mb-6 mt-6 text-balance text-4xl font-bold leading-tight sm:text-5xl lg:text-5xl">
+              Soluzioni professionali per{' '}
+              <span className="text-primary">demolizioni</span> e{' '}
               <span className="text-primary">recupero materiali</span>
             </h2>
-            <p className="text-xl text-text-secondary mb-8 max-w-lg">
-              Affidati a Desmare per servizi di demolizione, smaltimento e
+            <p className="mb-8 max-w-lg text-xl text-text-secondary">
+              Affidati a De.Sma.Re per servizi di demolizione, smaltimento e
               recupero rifiuti. La nostra esperienza garantisce sicurezza,
               efficienza e rispetto dell'ambiente.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col gap-4 sm:flex-row">
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="btn btn-primary px-8 py-3 text-lg"
               >
                 Richiedi un preventivo
               </button>
-              <button className="btn px-8 py-3 text-lg border border-primary/20 hover:bg-primary/5 transition-colors">
+              <button className="btn border border-primary/20 px-8 py-3 text-lg transition-colors hover:bg-primary/5">
                 +39 123 456 7890
               </button>
             </div>
@@ -84,12 +84,12 @@ export default function HeroComingSoon() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="relative"
           >
-            <div className="absolute -top-8 -left-8 w-40 h-40 bg-primary/10 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-primary/10 rounded-full blur-2xl"></div>
+            <div className="absolute -left-8 -top-8 h-40 w-40 rounded-full bg-primary/10 blur-2xl"></div>
+            <div className="absolute -bottom-8 -right-8 h-40 w-40 rounded-full bg-primary/10 blur-2xl"></div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden shadow-xl h-40 sm:h-64 relative">
+                <div className="relative h-40 overflow-hidden rounded-2xl shadow-xl sm:h-64">
                   <Image
                     src="/images/img/demolition-excavator-action.jpg"
                     alt="Servizi di demolizione"
@@ -97,7 +97,7 @@ export default function HeroComingSoon() {
                     className="object-cover"
                   />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-xl h-40 sm:h-48 relative">
+                <div className="relative h-40 overflow-hidden rounded-2xl shadow-xl sm:h-48">
                   <Image
                     src="/images/img/metal-scrap-after-industrial-demolition.jpg"
                     alt="Recupero materiali"
@@ -106,8 +106,8 @@ export default function HeroComingSoon() {
                   />
                 </div>
               </div>
-              <div className="space-y-4 mt-8">
-                <div className="rounded-2xl overflow-hidden shadow-xl h-40 sm:h-48 relative">
+              <div className="mt-8 space-y-4">
+                <div className="relative h-40 overflow-hidden rounded-2xl shadow-xl sm:h-48">
                   <Image
                     src="/images/img/waste-loading-into-dumpster-truck.jpg"
                     alt="Smaltimento rifiuti"
@@ -115,7 +115,7 @@ export default function HeroComingSoon() {
                     className="object-cover"
                   />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-xl h-40 sm:h-64 relative">
+                <div className="relative h-40 overflow-hidden rounded-2xl shadow-xl sm:h-64">
                   <Image
                     src="/images/img/construction-site-drone-view-earthmoving.jpg"
                     alt="Attrezzature specializzate"
@@ -128,8 +128,8 @@ export default function HeroComingSoon() {
           </motion.div>
         </div>
       </div>
-      <div className="text-balance text-center btn btn-primary rounded-none flex text-4xl font-bold align-center justify-center items-center py-8">
-        <h3>Sito in costruzione! Desmare sarà presto online</h3>
+      <div className="btn btn-primary align-center flex items-center justify-center text-balance rounded-none py-8 text-center text-4xl font-bold">
+        <h3>Sito in costruzione! De.Sma.Re sarà presto online</h3>
       </div>
 
       <QuoteRequestModal

@@ -8,10 +8,10 @@ export const siteConfig = {
     piva: '03962600544',
     pec: 'desmare@pec.it',
   },
-  social: {
-    linkedin: 'https://linkedin.com/company/desmare',
-    facebook: 'https://facebook.com/desmare',
-  },
+  // social: {
+  //   linkedin: 'https://linkedin.com/company/desmare',
+  //   facebook: 'https://facebook.com/desmare',
+  // },
   seo: {
     title: 'De.sma.re - Servizi di demolizione e bonifica ambientale',
     description:

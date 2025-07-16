@@ -5,7 +5,7 @@ export const homeContent = {
       highlighted: ['demolizioni', 'recupero materiali'],
     },
     description:
-      "Affidati a Desmare per servizi di demolizione, smaltimento e recupero rifiuti. La nostra esperienza garantisce sicurezza, efficienza e rispetto dell'ambiente.",
+      "Affidati a De.Sma.Re per servizi di demolizione, smaltimento e recupero rifiuti. La nostra esperienza garantisce sicurezza, efficienza e rispetto dell'ambiente.",
     cta: {
       primary: 'Richiedi un preventivo',
       secondary: 'Scopri i servizi',
@@ -43,7 +43,7 @@ export const homeContent = {
     title: 'Chi Siamo',
     subtitle: 'Esperienza e professionalità al tuo servizio',
     description:
-      "Desmare è leader nel settore delle demolizioni e del recupero materiali. Con anni di esperienza, garantiamo servizi di alta qualità nel rispetto dell'ambiente.",
+      "De.Sma.Re è leader nel settore delle demolizioni e del recupero materiali. Con anni di esperienza, garantiamo servizi di alta qualità nel rispetto dell'ambiente.",
     stats: [
       { number: '15+', label: 'Anni di Esperienza' },
       { number: '1000+', label: 'Progetti Completati' },
@@ -52,7 +52,7 @@ export const homeContent = {
   },
   testimonials: {
     title: 'Cosa Dicono i Nostri Clienti',
-    subtitle: 'Le esperienze di chi ha scelto Desmare',
+    subtitle: 'Le esperienze di chi ha scelto De.Sma.Re',
     items: [
       {
         name: 'Mario Rossi',

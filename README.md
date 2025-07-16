@@ -1,6 +1,6 @@
-# Desmare - Modern Business Solutions
+# De.Sma.Re - Modern Business Solutions
 
-A modern website template for Desmare, designed with Next.js, TypeScript, and Tailwind CSS. This website showcases Desmare's solutions with a sleek, modern design.
+A modern website template for De.Sma.Re, designed with Next.js, TypeScript, and Tailwind CSS. This website showcases De.Sma.Re's solutions with a sleek, modern design.
 
 ## Features
 
@@ -86,4 +86,4 @@ The template is optimized for modern browsers:
 
 ---
 
-Created for Desmare's innovative business solutions.
+Created for De.Sma.Re's innovative business solutions.

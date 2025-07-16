@@ -12,7 +12,10 @@ const serviceSubmenuItems = [
   { name: 'Demolizioni', href: '/servizi/demolizioni' },
   { name: 'Strip-out', href: '/servizi/strip-out' },
   { name: 'Bonifiche', href: '/servizi/bonifiche' },
-  { name: 'Smaltimento Macchinari', href: '/servizi/smaltimento-macchinari-industriali' },
+  {
+    name: 'Smaltimento Macchinari',
+    href: '/servizi/smaltimento-macchinari-industriali',
+  },
 ];
 
 export default function Header() {
@@ -92,7 +95,7 @@ export default function Header() {
           >
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold tracking-tight">
-                Desmare
+                De.Sma.Re
               </Link>
             </div>
 

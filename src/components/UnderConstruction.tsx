@@ -1,7 +1,7 @@
-"use client"
+'use client';
 
-import { motion } from "framer-motion";
-import { PiGearSixFill } from "react-icons/pi";
+import { motion } from 'framer-motion';
+import { PiGearSixFill } from 'react-icons/pi';
 
 export default function UnderConstruction() {
   // Animation variants
@@ -22,7 +22,7 @@ export default function UnderConstruction() {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: "easeOut",
+        ease: 'easeOut',
       },
     },
   };
@@ -33,7 +33,7 @@ export default function UnderConstruction() {
     transition: {
       times: [0, 1],
       duration: 10,
-      ease: "linear",
+      ease: 'linear',
       repeat: Infinity,
       repeatDelay: 0,
     },
@@ -44,39 +44,39 @@ export default function UnderConstruction() {
     transition: {
       times: [0, 1],
       duration: 15,
-      ease: "linear",
+      ease: 'linear',
       repeat: Infinity,
       repeatDelay: 0,
     },
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-construction-bg overflow-hidden">
+    <div className="flex h-screen items-center justify-center overflow-hidden bg-construction-bg">
       <div className="container-custom">
         <motion.div
-          className="max-w-xl mx-auto text-center"
+          className="mx-auto max-w-xl text-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {/* Logo placeholder */}
           <motion.div
-            className="mx-auto w-20 h-20 bg-construction-accent-transparent rounded-full mb-4 flex items-center justify-center"
+            className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-construction-accent-transparent"
             variants={itemVariants}
           >
-            <div className="text-construction-text text-3xl font-bold">D</div>
+            <div className="text-3xl font-bold text-construction-text">D</div>
           </motion.div>
 
           {/* Company name */}
           <motion.div className="mb-5" variants={itemVariants}>
             <h1 className="text-3xl font-bold tracking-tight text-construction-text">
-              Desmare
+              De.Sma.Re
             </h1>
           </motion.div>
 
           {/* Main heading */}
           <motion.h2
-            className="text-4xl md:text-5xl font-bold mb-4 text-construction-text"
+            className="mb-4 text-4xl font-bold text-construction-text md:text-5xl"
             variants={itemVariants}
           >
             Sito in costruzione
@@ -84,22 +84,22 @@ export default function UnderConstruction() {
 
           {/* Subheading */}
           <motion.h3
-            className="text-xl md:text-2xl text-construction-text-secondary mb-10"
+            className="mb-10 text-xl text-construction-text-secondary md:text-2xl"
             variants={itemVariants}
           >
-            Desmare sarà presto online!
+            De.Sma.Re sarà presto online!
           </motion.h3>
 
           {/* Animated construction graphic */}
           <motion.div
-            className="relative h-44 w-44 mx-auto mb-10"
+            className="relative mx-auto mb-10 h-44 w-44"
             variants={itemVariants}
           >
             {/* Gear animations */}
             <motion.div
-              className="absolute top-4 left-4 text-construction-accent"
+              className="absolute left-4 top-4 text-construction-accent"
               animate={gear1Animation}
-              style={{ originX: "center", originY: "center" }}
+              style={{ originX: 'center', originY: 'center' }}
             >
               <PiGearSixFill size={72} />
             </motion.div>
@@ -107,7 +107,7 @@ export default function UnderConstruction() {
             <motion.div
               className="absolute bottom-4 right-4 text-construction-accent"
               animate={gear2Animation}
-              style={{ originX: "center", originY: "center" }}
+              style={{ originX: 'center', originY: 'center' }}
             >
               <PiGearSixFill size={72} />
             </motion.div>
@@ -115,9 +115,9 @@ export default function UnderConstruction() {
 
           {/* Contact CTA */}
           <motion.div variants={itemVariants}>
-            <div className="border-construction-border border-2 rounded-lg py-4 px-6 inline-block shadow-sm">
-              <h3 className="text-lg md:text-xl font-medium text-construction-text">
-                Per maggiori informazioni:{" "}
+            <div className="inline-block rounded-lg border-2 border-construction-border px-6 py-4 shadow-sm">
+              <h3 className="text-lg font-medium text-construction-text md:text-xl">
+                Per maggiori informazioni:{' '}
                 <a
                   href="mailto:info@desmare.it"
                   className="text-construction-accent hover:underline"

@@ -8,7 +8,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Desmare ha completato la demolizione del nostro vecchio edificio industriale con grande professionalità. Sono stati estremamente attenti alla sicurezza e hanno recuperato la maggior parte dei materiali riducendo l'impatto ambientale.",
+      "De.Sma.Re ha completato la demolizione del nostro vecchio edificio industriale con grande professionalità. Sono stati estremamente attenti alla sicurezza e hanno recuperato la maggior parte dei materiali riducendo l'impatto ambientale.",
     author: 'Marco Rossi',
     position: 'Direttore Operativo, TechBuild SpA',
     image: '/images/img/demolition-excavator-action.jpg', // Industrial demolition project
@@ -16,7 +16,7 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "Abbiamo scelto Desmare per il loro approccio sostenibile. La loro capacità di recuperare e riutilizzare i materiali da demolizione è stata impressionante, aiutandoci a ridurre i costi e l'impatto ambientale del nostro progetto.",
+      "Abbiamo scelto De.Sma.Re per il loro approccio sostenibile. La loro capacità di recuperare e riutilizzare i materiali da demolizione è stata impressionante, aiutandoci a ridurre i costi e l'impatto ambientale del nostro progetto.",
     author: 'Laura Bianchi',
     position: 'Project Manager, GreenDev Srl',
     image: '/images/img/construction-site-drone-view-earthmoving.jpg',
@@ -24,7 +24,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      'Il servizio di smaltimento rifiuti edili fornito da Desmare è stato impeccabile. Hanno gestito tutta la documentazione e le autorizzazioni necessarie, permettendoci di concentrarci sul nostro progetto di costruzione.',
+      'Il servizio di smaltimento rifiuti edili fornito da De.Sma.Re è stato impeccabile. Hanno gestito tutta la documentazione e le autorizzazioni necessarie, permettendoci di concentrarci sul nostro progetto di costruzione.',
     author: 'Alessandro Verdi',
     position: 'Titolare, Costruzioni Verdi',
     image: '/images/img/waste-loading-into-dumpster-truck.jpg',

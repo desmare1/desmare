@@ -1,3 +1,4 @@
+import ClientLayout from '@/components/ClientLayout';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { metadataConfig } from '@/content/metadata';
@@ -43,14 +44,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: metadataConfig.defaults.locale,
     url: metadataConfig.defaults.baseUrl,
-    title: 'Desmare - Servizi di Demolizione Professionali',
+    title: 'De.Sma.Re - Servizi di Demolizione Professionali',
     description:
       'Servizi professionali di demolizione, strip-out e gestione rifiuti con un approccio sostenibile e conforme alle normative.',
     siteName: metadataConfig.defaults.siteName,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Desmare - Servizi di Demolizione Professionali',
+    title: 'De.Sma.Re - Servizi di Demolizione Professionali',
     description:
       'Servizi professionali di demolizione, strip-out e gestione rifiuti con un approccio sostenibile e conforme alle normative.',
   },
@@ -71,14 +72,16 @@ export default function RootLayout({
   return (
     <html lang="it" className={inter.variable}>
       <head>
-        <meta name="apple-mobile-web-app-title" content="Desmare" />
+        <meta name="apple-mobile-web-app-title" content="De.Sma.Re" />
       </head>
       <body className="font-sans">
-        <Header />
-        <main className="min-h-screen" role="main" id="main-content">
-          {children}
-        </main>
-        <Footer />
+        <ClientLayout>
+          <Header />
+          <main className="min-h-screen" role="main" id="main-content">
+            {children}
+          </main>
+          <Footer />
+        </ClientLayout>
       </body>
     </html>
   );

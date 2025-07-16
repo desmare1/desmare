@@ -11,9 +11,9 @@ export default function ValuePro() {
       transition={{ duration: 0.6 }}
       className="mb-16 rounded-2xl bg-primary/5 p-8 text-center md:p-12"
     >
-      <h2 className="mb-6 text-3xl font-bold">Perché scegliere Desmare?</h2>
+      <h2 className="mb-6 text-3xl font-bold">Perché scegliere De.Sma.Re?</h2>
       <p className="mx-auto mb-10 max-w-3xl text-lg text-text-secondary">
-        Desmare si distingue per esperienza, affidabilità e impegno verso la
+        De.Sma.Re si distingue per esperienza, affidabilità e impegno verso la
         sostenibilità. Ci assumiamo la responsabilità completa del progetto,
         garantendo tranquillità e risultati eccellenti.
       </p>
