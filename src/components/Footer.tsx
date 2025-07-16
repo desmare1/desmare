@@ -16,21 +16,21 @@ export default function Footer() {
       aria-label="Informazioni di contatto e navigazione secondaria"
     >
       <div className="container-custom">
-        <div className="mb-16 grid grid-cols-2 gap-8 md:grid-cols-5">
-          <div className="col-span-2">
+        <div className="mb-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:mb-16 md:grid-cols-5">
+          <div className="sm:col-span-2">
             <Link
               href="/"
-              className="mb-6 inline-block text-2xl font-bold tracking-tight"
+              className="mb-4 inline-block text-xl font-bold tracking-tight sm:text-2xl md:mb-6"
               aria-label="De.sma.re - Vai alla home page"
             >
               De.sma.re
             </Link>
-            <p className="mt-4 max-w-xs text-text-secondary">
+            <p className="mt-4 max-w-sm text-text-secondary sm:max-w-xs">
               Soluzioni professionali per demolizioni, smaltimento e recupero
               materiali con attenzione alla sostenibilità.
             </p>
 
-            <div className="mt-6">
+            <div className="mt-4 sm:mt-6">
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="btn btn-primary"
@@ -43,10 +43,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-medium" id="footer-azienda">
+            <h4 className="mb-3 font-medium sm:mb-4" id="footer-azienda">
               Link utili
             </h4>
-            <ul className="space-y-3" aria-labelledby="footer-azienda">
+            <ul className="space-y-2 sm:space-y-3" aria-labelledby="footer-azienda">
               <li>
                 <Link
                   href="/collabora"
@@ -59,10 +59,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-medium" id="footer-azienda">
+            <h4 className="mb-3 font-medium sm:mb-4" id="footer-azienda">
               Azienda
             </h4>
-            <ul className="space-y-3" aria-labelledby="footer-azienda">
+            <ul className="space-y-2 sm:space-y-3" aria-labelledby="footer-azienda">
               <li>
                 <Link
                   href="/chi-siamo"
@@ -89,12 +89,12 @@ export default function Footer() {
               className="text-text transition-colors hover:text-text"
               aria-labelledby="footer-contatti"
             >
-              <h4 className="mb-4 font-medium" id="footer-contatti">
+              <h4 className="mb-3 font-medium sm:mb-4" id="footer-contatti">
                 Contatti
               </h4>
             </Link>
 
-            <ul className="space-y-3" aria-labelledby="footer-contatti">
+            <ul className="space-y-2 sm:space-y-3" aria-labelledby="footer-contatti">
               <li className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -147,36 +147,42 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between border-t border-white/10 pt-8 md:flex-row md:items-center">
-          <div className="text-sm text-text-secondary">
-            © {new Date().getFullYear()} De.sma.re Recycling service di Antonio
-            Boschi. Tutti i diritti riservati. <br /> {`${contact.address}`},
-            P.IVA: {`${contact.piva}`}, PEC:{' '}
-            <a
-              href={`mailto:${contact.pec}`}
-              className="text-text-secondary transition-colors hover:text-primary"
-            >
-              {`${contact.pec}`}
-            </a>
+        <div className="flex flex-col justify-between border-t border-white/10 pt-6 md:flex-row md:items-center md:pt-8">
+          <div className="text-xs text-text-secondary sm:text-sm">
+            <div className="mb-2">
+              © {new Date().getFullYear()} De.sma.re Recycling service di Antonio Boschi. Tutti i diritti riservati.
+            </div>
+            <div className="mb-2">
+              {`${contact.address}`}, P.IVA: {`${contact.piva}`}
+            </div>
+            <div>
+              PEC:{' '}
+              <a
+                href={`mailto:${contact.pec}`}
+                className="text-text-secondary transition-colors hover:text-primary"
+              >
+                {`${contact.pec}`}
+              </a>
+            </div>
           </div>
 
           <nav aria-label="Pagine legali" className="flex items-center">
-            <div className="mt-4 flex space-x-6 md:mt-0">
+            <div className="mt-4 flex flex-col space-y-2 sm:flex-row sm:space-x-6 sm:space-y-0 md:mt-0">
               <Link
                 href="/termini-e-condizioni"
-                className="text-sm text-text-secondary transition-colors hover:text-text"
+                className="text-xs text-text-secondary transition-colors hover:text-text sm:text-sm"
               >
                 Termini e Condizioni
               </Link>
               <Link
                 href="/privacy"
-                className="text-sm text-text-secondary transition-colors hover:text-text"
+                className="text-xs text-text-secondary transition-colors hover:text-text sm:text-sm"
               >
                 Privacy
               </Link>
               <Link
                 href="/cookie"
-                className="text-sm text-text-secondary transition-colors hover:text-text"
+                className="text-xs text-text-secondary transition-colors hover:text-text sm:text-sm"
               >
                 Cookie
               </Link>

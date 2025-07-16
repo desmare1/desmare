@@ -27,15 +27,15 @@ const services = [
 
 export default function ServicesPreview() {
   return (
-    <section className="py-20">
+    <section className="">
       <div className="container-custom">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <div className="mx-auto mb-16 text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             I Nostri Servizi
           </h2>
-          <p className="text-lg text-text-secondary">
-            Offriamo soluzioni professionali e sostenibili per demolizioni,
-            smaltimento e recupero di rifiuti.
+          <p className="text-text-primary text-balance md:text-2xl lg:whitespace-nowrap">
+            Soluzioni professionali e sostenibili per demolizioni, smaltimento e
+            recupero di rifiuti.
           </p>
         </div>
 

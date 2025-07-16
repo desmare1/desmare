@@ -16,7 +16,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
       setIsVisible(false);
       sessionStorage.setItem('desmare-splash-seen', 'true');
       onComplete?.();
-    }, 6000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [onComplete]);

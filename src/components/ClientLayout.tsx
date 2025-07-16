@@ -9,11 +9,15 @@ interface ClientLayoutProps {
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(false);
   const [isBodyLocked, setIsBodyLocked] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
+    // Mark component as hydrated
+    setIsHydrated(true);
+    
     // Only show splash on the home page
     if (pathname === '/') {
       const hasSeenSplash = sessionStorage.getItem('desmare-splash-seen');
@@ -43,7 +47,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
 
   return (
     <>
-      {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
+      {isHydrated && showSplash && <SplashScreen onComplete={handleSplashComplete} />}
       <div className={isBodyLocked ? 'overflow-hidden' : ''}>
         {children}
       </div>

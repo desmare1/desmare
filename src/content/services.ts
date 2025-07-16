@@ -77,30 +77,30 @@ export const servicesContent = {
       subtitle: 'Soluzioni complete con un unico referente',
       heroImage: '/images/img/demolition-excavator-action.jpg',
       description:
-        'De.Sma.Re offre <span class="font-semibold text-primary">servizi completi di demolizione</span> per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla <span class="font-semibold text-primary">pianificazione iniziale</span> alla <span class="font-semibold text-primary">consegna finale del sito</span>, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e conformità normativa</span>.',
+        'De.Sma.Re offre <span>servizi completi di demolizione</span> per strutture civili e industriali. Ci occupiamo di tutto il processo, dalla <span>pianificazione iniziale</span> alla <span>consegna finale del sito</span>, garantendo <span>sicurezza, efficienza e conformità normativa</span>.',
       benefits: [
         {
           title: 'Un unico referente',
           description:
-            'Gestiamo l\'<span class="font-semibold text-primary">intero progetto</span>, eliminando <span class="font-semibold text-primary">complessità e stress</span> per il cliente',
+            "Gestiamo l'<span>intero progetto</span>, eliminando <span>complessità e stress</span> per il cliente",
           icon: 'user',
         },
         {
           title: 'Sicurezza garantita',
           description:
-            'Rispetto rigoroso delle <span class="font-semibold text-primary">normative</span> con un focus sulla <span class="font-semibold text-primary">sicurezza di persone e ambiente</span>',
+            'Rispetto rigoroso delle <span>normative</span> con un focus sulla <span>sicurezza di persone e ambiente</span>',
           icon: 'shield',
         },
         {
           title: 'Gestione completa dei rifiuti',
           description:
-            'Ci assumiamo la <span class="font-semibold text-primary">responsabilità legale e operativa</span> di tutti i <span class="font-semibold text-primary">rifiuti generati</span>',
+            'Ci assumiamo la <span>responsabilità legale e operativa</span> di tutti i <span>rifiuti generati</span>',
           icon: 'recycle',
         },
         {
           title: 'Movimento terra integrato',
           description:
-            'Prepariamo il sito per la fase successiva con servizi di <span class="font-semibold text-primary">movimento terra professionali</span>',
+            'Prepariamo il sito per la fase successiva con servizi di <span>movimento terra professionali</span>',
           icon: 'truck',
         },
       ],
@@ -170,18 +170,18 @@ export const servicesContent = {
       subtitle: 'Preparazione professionale per ristrutturazioni',
       heroImage: '/images/img/facade-dismantling-workers-metal-cutting.jpg',
       description:
-        'Servizi di <span class="font-semibold text-primary">strip-out di precisione</span> per la preparazione degli spazi alla <span class="font-semibold text-primary">ristrutturazione o riqualificazione</span>, con <span class="font-semibold text-primary">minimo impatto</span> sulle strutture adiacenti.',
+        'Servizi di <span>strip-out di precisione</span> per la preparazione degli spazi alla <span>ristrutturazione o riqualificazione</span>, con <span>minimo impatto</span> sulle strutture adiacenti.',
       benefits: [
         {
           title: 'Precisione e cura',
           description:
-            'Rimozione selettiva degli elementi con <span class="font-semibold text-primary">massima attenzione ai dettagli</span>',
+            'Rimozione selettiva degli elementi con <span>massima attenzione ai dettagli</span>',
           icon: 'precision',
         },
         {
           title: 'Minimizzazione dei disturbi',
           description:
-            'Tecniche e procedure che riducono al <span class="font-semibold text-primary">minimo l\'impatto</span> sulle aree circostanti',
+            "Tecniche e procedure che riducono al <span>minimo l'impatto</span> sulle aree circostanti",
           icon: 'shield',
         },
         {
@@ -193,7 +193,7 @@ export const servicesContent = {
         {
           title: 'Consegna professionale',
           description:
-            'Consegna dell\'area <span class="font-semibold text-primary">completata e pronta all\'uso</span>',
+            "Consegna dell'area <span>completata e pronta all'uso</span>",
           icon: 'check',
         },
       ],
@@ -263,30 +263,30 @@ export const servicesContent = {
       subtitle: "Soluzioni sicure e conformi per la tutela dell'ambiente",
       heroImage: '/images/img/environmental-cleanup.jpg',
       description:
-        'Bonifiche ambientali e <span class="font-semibold text-primary">gestione sicura di materiali speciali</span>, incluso <span class="font-semibold text-primary">amianto</span>. Servizi specializzati con focus su <span class="font-semibold text-primary">sicurezza e tutela dell\'ambiente</span>.',
+        "Bonifiche ambientali e <span>gestione sicura di materiali speciali</span>, incluso <span>amianto</span>. Servizi specializzati con focus su <span>sicurezza e tutela dell'ambiente</span>.",
       benefits: [
         {
           title: 'Sicurezza garantita',
           description:
-            'Procedure rigorose per la <span class="font-semibold text-primary">protezione di persone e ambiente</span>',
+            'Procedure rigorose per la <span>protezione di persone e ambiente</span>',
           icon: 'shield',
         },
         {
           title: 'Conformità normativa',
           description:
-            'Rispetto di tutte le <span class="font-semibold text-primary">normative vigenti</span> per la gestione dei <span class="font-semibold text-primary">rifiuti pericolosi</span>',
+            'Rispetto di tutte le <span>normative vigenti</span> per la gestione dei <span>rifiuti pericolosi</span>',
           icon: 'check',
         },
         {
           title: 'Certificazioni complete',
           description:
-            '<span class="font-semibold text-primary">Documentazione dettagliata e certificazioni</span> per ogni intervento',
+            '<span>Documentazione dettagliata e certificazioni</span> per ogni intervento',
           icon: 'certificate',
         },
         {
           title: 'Soluzioni sostenibili',
           description:
-            'Approccio <span class="font-semibold text-primary">eco-sostenibile</span> alla gestione dei <span class="font-semibold text-primary">rifiuti pericolosi</span>',
+            'Approccio <span>eco-sostenibile</span> alla gestione dei <span>rifiuti pericolosi</span>',
           icon: 'leaf',
         },
       ],
@@ -356,30 +356,30 @@ export const servicesContent = {
       heroImage:
         '/images/img/abandoned-industrial-machine-hall-large-space.png',
       description:
-        'De.Sma.Re offre un <span class="font-semibold text-primary">servizio completo</span> per lo smaltimento di <span class="font-semibold text-primary">macchinari e impianti industriali</span> obsoleti o dismessi. Dallo <span class="font-semibold text-primary">smontaggio in loco</span> al trasporto e al conferimento in <span class="font-semibold text-primary">centri autorizzati</span>, gestiamo ogni fase con la massima professionalità, garantendo <span class="font-semibold text-primary">sicurezza, efficienza e pieno rispetto delle normative ambientali</span>.',
+        'De.Sma.Re offre un <span>servizio completo</span> per lo smaltimento di <span>macchinari e impianti industriali</span> obsoleti o dismessi. Dallo <span>smontaggio in loco</span> al trasporto e al conferimento in <span>centri autorizzati</span>, gestiamo ogni fase con la massima professionalità, garantendo <span>sicurezza, efficienza e pieno rispetto delle normative ambientali</span>.',
       benefits: [
         {
           title: 'Servizio completo',
           description:
-            'Ci occupiamo di <span class="font-semibold text-primary">ogni aspetto</span>, dallo <span class="font-semibold text-primary">smontaggio alla documentazione finale</span>, offrendoti un <span class="font-semibold text-primary">unico partner affidabile</span> e sollevandoti da ogni complessità.',
+            'Ci occupiamo di <span>ogni aspetto</span>, dallo <span>smontaggio alla documentazione finale</span>, offrendoti un <span>unico partner affidabile</span> e sollevandoti da ogni complessità.',
           icon: 'user',
         },
         {
           title: 'Valorizzazione dei beni',
           description:
-            'Acquistiamo i macchinari o le strutture industriali dismesse, riconoscendo il loro <span class="font-semibold text-primary">valore di recupero</span> e trasformando un potenziale costo in un\'<span class="font-semibold text-primary">opportunità economica</span>.',
+            "Acquistiamo i macchinari o le strutture industriali dismesse, riconoscendo il loro <span>valore di recupero</span> e trasformando un potenziale costo in un'<span>opportunità economica</span>.",
           icon: 'coins',
         },
         {
           title: 'Ottimizzazione',
           description:
-            'Grazie alla nostra <span class="font-semibold text-primary">esperienza e pianificazione</span>, riduciamo al minimo i <span class="font-semibold text-primary">tempi di fermo e gli imprevisti</span>, completando le operazioni in modo <span class="font-semibold text-primary">rapido ed efficiente</span>.',
+            'Grazie alla nostra <span>esperienza e pianificazione</span>, riduciamo al minimo i <span>tempi di fermo e gli imprevisti</span>, completando le operazioni in modo <span>rapido ed efficiente</span>.',
           icon: 'clock',
         },
         {
           title: 'Impatto ridotto',
           description:
-            'Privilegiamo il <span class="font-semibold text-primary">recupero e il riciclo dei materiali</span>, minimizzando la quantità di rifiuti destinati a discarica e contribuendo attivamente alla <span class="font-semibold text-primary">sostenibilità ambientale</span>.',
+            'Privilegiamo il <span>recupero e il riciclo dei materiali</span>, minimizzando la quantità di rifiuti destinati a discarica e contribuendo attivamente alla <span>sostenibilità ambientale</span>.',
           icon: 'leaf',
         },
       ],

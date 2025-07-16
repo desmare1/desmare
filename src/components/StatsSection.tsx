@@ -24,13 +24,13 @@ export default function StatsSection() {
   return (
     <section className="border-t border-white/10 py-20">
       <div className="container-custom">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
+        <div className="mx-auto mb-12 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-6 text-3xl font-bold md:text-4xl"
+            className="mb-6 text-balance text-3xl font-bold md:text-4xl"
           >
             La nostra esperienza in numeri
           </motion.h2>
@@ -39,10 +39,10 @@ export default function StatsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-text-secondary"
+            className="text-text-primary text-balance md:text-lg lg:whitespace-nowrap"
           >
             De.Sma.Re offre servizi professionali con l'obiettivo di unire
-            efficienza, sicurezza e sostenibilità ambientale in ogni progetto.
+            efficienza, sicurezza e sostenibilità ambientale in ogni progetto
           </motion.p>
         </div>
 
@@ -54,16 +54,16 @@ export default function StatsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              className="rounded-xl bg-primary/5 p-6 text-center"
+              className="card text-center"
             >
-              <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <div className="icon-container mx-auto mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="h-6 w-6"
+                  className="icon"
                 >
                   <path
                     strokeLinecap="round"

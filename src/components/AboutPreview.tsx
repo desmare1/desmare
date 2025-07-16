@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function AboutPreview() {
   return (
-    <section className="bg-primary/5 py-20">
+    <section className="bg-ui-section-bg py-20">
       <div className="container-custom">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <motion.div
@@ -16,11 +16,13 @@ export default function AboutPreview() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">Chi Siamo</h2>
-            <p className="mb-6 text-lg text-text-secondary">
-              De.Sma.Re è una giovane azienda specializzata in demolizioni,
-              smaltimento di rifiuti e recupero materiali. La nostra missione è
-              fornire servizi professionali che uniscono efficienza, sicurezza e
-              sostenibilità.
+            <p className="mb-6 text-balance text-lg text-text-secondary">
+              De.Sma.Re è una giovane azienda specializzata in{' '}
+              <span>demolizioni</span>, <span>smaltimento di rifiuti</span> e{' '}
+              {''}
+              <span>recupero materiali</span>. La nostra missione è fornire
+              servizi professionali che uniscono <span>efficienza</span>,{' '}
+              <span>sicurezza</span> e <span>sostenibilità</span>.
             </p>
             {/* <p className="mb-8 text-lg text-text-secondary">
               Ci impegniamo a garantire che i materiali di scarto vengano
@@ -63,8 +65,8 @@ export default function AboutPreview() {
                 className="object-cover object-right"
               />
             </div>
-            <div className="absolute -bottom-5 -right-5 -z-10 h-40 w-40 rounded-full bg-primary/10 blur-2xl"></div>
-            <div className="absolute -left-5 -top-5 -z-10 h-40 w-40 rounded-full bg-primary/10 blur-2xl"></div>
+            <div className="absolute -bottom-5 -right-5 -z-10 h-40 w-40 rounded-full bg-gray-100 blur-2xl"></div>
+            <div className="absolute -left-5 -top-5 -z-10 h-40 w-40 rounded-full bg-gray-100 blur-2xl"></div>
           </motion.div>
         </div>
       </div>
