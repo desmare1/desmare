@@ -13,40 +13,43 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   const [showSplash, setShowSplash] = useState(false);
   const [isBodyLocked, setIsBodyLocked] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false);
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true); // Default to true for SSR
   const pathname = usePathname();
 
   useEffect(() => {
     // Mark component as hydrated
     setIsHydrated(true);
     
-    // Only show splash on the home page
+    // Only check for splash after hydration and only on home page
     if (pathname === '/') {
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      
-      // Check if this is a fresh page load (first visit or refresh)
-      const navigationEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
-      const navigationType = navigationEntries.length > 0 ? navigationEntries[0].type : 'navigate';
-      
-      // Show splash on:
-      // 1. Page refresh (reload)
-      // 2. First visit (navigate with empty referrer or different domain)
-      const isRefresh = navigationType === 'reload';
-      const isFirstVisit = navigationType === 'navigate' && 
-        (!document.referrer || !document.referrer.includes(window.location.host));
-      
-      const shouldShowSplash = (isRefresh || isFirstVisit) && !prefersReducedMotion;
-      
-      if (shouldShowSplash) {
-        setShowSplash(true);
-        setIsBodyLocked(true);
-        setShowContent(false);
+      // Ensure we're on the client
+      if (typeof window !== 'undefined') {
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         
-        // Lock body scroll
-        document.body.style.overflow = 'hidden';
-      } else {
-        setShowSplash(false);
-        setShowContent(true);
+        // Check if this is a fresh page load (first visit or refresh)
+        const navigationEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
+        const navigationType = navigationEntries.length > 0 ? navigationEntries[0].type : 'navigate';
+        
+        // Show splash on:
+        // 1. Page refresh (reload)
+        // 2. First visit (navigate with empty referrer or different domain)
+        const isRefresh = navigationType === 'reload';
+        const isFirstVisit = navigationType === 'navigate' && 
+          (!document.referrer || !document.referrer.includes(window.location.host));
+        
+        const shouldShowSplash = (isRefresh || isFirstVisit) && !prefersReducedMotion;
+        
+        if (shouldShowSplash) {
+          setShowSplash(true);
+          setIsBodyLocked(true);
+          setShowContent(false);
+          
+          // Lock body scroll
+          document.body.style.overflow = 'hidden';
+        } else {
+          setShowSplash(false);
+          setShowContent(true);
+        }
       }
     } else {
       setShowSplash(false);
@@ -74,9 +77,9 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
         {showContent && (
           <motion.div
             className={isBodyLocked ? 'overflow-hidden' : ''}
-            initial={{ opacity: 0 }}
+            initial={{ opacity: isHydrated ? 0 : 1 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ duration: isHydrated ? 0.6 : 0, ease: 'easeOut' }}
           >
             {children}
           </motion.div>
