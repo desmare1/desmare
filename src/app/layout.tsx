@@ -4,9 +4,9 @@ import Header from '@/components/Header';
 import { metadataConfig } from '@/content/metadata';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Varta } from 'next/font/google';
+import { Menbere } from 'next/font/google';
 
-const varta = Varta({
+const menbere = Menbere({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-varta',
@@ -71,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it" className={varta.variable}>
+    <html lang="it" className={menbere.variable}>
       <head>
         <meta name="apple-mobile-web-app-title" content="De.Sma.Re" />
       </head>
