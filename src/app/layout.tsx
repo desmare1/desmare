@@ -4,12 +4,12 @@ import Header from '@/components/Header';
 import { metadataConfig } from '@/content/metadata';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Urbanist } from 'next/font/google';
+import { Varta } from 'next/font/google';
 
-const urbanist = Urbanist({
+const varta = Varta({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-urbanist',
+  variable: '--font-varta',
   display: 'swap', // Ottimizzazione per il caricamento dei font
 });
 
@@ -71,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it" className={urbanist.variable}>
+    <html lang="it" className={varta.variable}>
       <head>
         <meta name="apple-mobile-web-app-title" content="De.Sma.Re" />
       </head>

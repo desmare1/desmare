@@ -100,7 +100,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'Urbanist',
+          'Varta',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
