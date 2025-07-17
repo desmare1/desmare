@@ -20,10 +20,13 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
     
     // Only show splash on the home page
     if (pathname === '/') {
-      const hasSeenSplash = sessionStorage.getItem('desmare-splash-seen');
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       
-      if (!hasSeenSplash && !prefersReducedMotion) {
+      // Check if page was refreshed (not navigated to)
+      const navigationEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
+      const isRefresh = navigationEntries.length > 0 && navigationEntries[0].type === 'reload';
+      
+      if (isRefresh && !prefersReducedMotion) {
         setShowSplash(true);
         setIsBodyLocked(true);
         
