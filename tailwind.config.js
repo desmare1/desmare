@@ -100,7 +100,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'Menbere',
+          'Inter',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',

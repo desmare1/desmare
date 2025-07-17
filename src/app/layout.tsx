@@ -4,12 +4,12 @@ import Header from '@/components/Header';
 import { metadataConfig } from '@/content/metadata';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Menbere } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const menbere = Menbere({
+const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-varta',
+  variable: '--font-inter',
   display: 'swap', // Ottimizzazione per il caricamento dei font
 });
 
@@ -71,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it" className={menbere.variable}>
+    <html lang="it" className={inter.variable}>
       <head>
         <meta name="apple-mobile-web-app-title" content="De.Sma.Re" />
       </head>
