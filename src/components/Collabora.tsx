@@ -35,20 +35,20 @@ export default function Collabora() {
   };
 
   return (
-    <section>
-      <Card variant="default">
-        <CardHeader>
+    <section className="h-full">
+      <Card variant="default" className="h-full">
+        <CardHeader className="pb-6">
           <CardTitle className="text-center text-2xl font-bold">
             Vuoi collaborare con noi?
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <div className="flex flex-col items-center justify-center gap-4 text-balance">
-            <span className="text-center">
-              Se sei un professionista del settore e vuoi entrare nella nostra
-              rete di collaborarori?
+        <CardContent className="flex flex-col pt-0">
+          <div className="flex flex-grow flex-col items-center justify-center gap-6 text-balance">
+            <span className="text-center text-primary">
+              Se sei un professionista del settore puoi entrare nella nostra
+              rete di collaboratori
             </span>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <Button variant="outline" className="w-fit">
                 <Link href="/collabora">Scopri di più</Link>
               </Button>

@@ -40,17 +40,18 @@ export default function ContactSection() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <h1 className="section-title">Contatti</h1>
           <p className="section-subtitle text-balance">
-            Siamo qui per aiutarti. Contattaci per qualsiasi informazione o per
-            richiedere un preventivo.
+            Interessato in uno dei <span>servizi</span>? <br />{' '}
+            <span>Contattaci</span> per qualsiasi <span>informazione</span> o
+            per richiedere un <span>preventivo</span>.
           </p>
         </div>
 
-        <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="flex flex-col gap-8">
+        <div className="grid items-start gap-12 md:grid-cols-2">
+          <div className="flex h-full flex-col gap-8">
             <ContactInfo />
             <Collabora />
           </div>
-          <div>
+          <div className="h-full">
             <InviaMessaggio />
           </div>
         </div>

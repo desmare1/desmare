@@ -75,14 +75,14 @@ export default function InviaMessaggio() {
   };
 
   return (
-    <section>
-      <Card className="mb-8">
-        <CardHeader>
+    <section className="h-full">
+      <Card className="h-full">
+        <CardHeader className="pb-6">
           <CardTitle className="text-2xl font-bold">
             Inviaci un messaggio
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="pt-0">
           {isSuccess && (
             <div className="mb-4 p-3 bg-success-light text-success rounded-md">
               Messaggio inviato con successo!

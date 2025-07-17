@@ -7,15 +7,15 @@ export default function ContactInfo() {
   const { contact } = useSiteConfig();
 
   return (
-    <Card>
-      <CardHeader className="text-center">
+    <Card className="h-full">
+      <CardHeader className="pb-6 text-center">
         <CardTitle>Contatti</CardTitle>
       </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
+      <CardContent className="pt-0">
+        <div className="space-y-6">
           <a
             href={`mailto:${contact.email}`}
-            className="flex items-center gap-2 text-text-secondary transition-colors hover:text-primary"
+            className="flex items-center gap-3 text-text-secondary transition-colors hover:text-primary hover:underline"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export default function ContactInfo() {
 
           <a
             href={`tel:${contact.phone}`}
-            className="flex items-center gap-2 text-text-secondary transition-colors hover:text-primary"
+            className="flex items-center gap-3 text-text-secondary transition-colors hover:text-primary hover:underline"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function ContactInfo() {
             {contact.phone}
           </a>
 
-          <address className="flex items-center gap-2 not-italic text-text-secondary">
+          <address className="flex items-center gap-3 not-italic text-text-secondary hover:text-primary hover:underline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -78,7 +78,9 @@ export default function ContactInfo() {
                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
               />
             </svg>
-            {contact.address}
+            <a href="https://maps.app.goo.gl/UP5yzP316AxJDaEm9" target="_blank">
+              {contact.address}
+            </a>
           </address>
         </div>
       </CardContent>

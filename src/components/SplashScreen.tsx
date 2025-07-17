@@ -20,6 +20,10 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
     return () => clearTimeout(timer);
   }, [onComplete]);
 
+  // Split logo into individual letters for staggered animation
+  const logoText = 'De.Sma.Re.';
+  const letters = logoText.split('');
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -27,56 +31,109 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
           className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-[#08A045]"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
-          {/* Logo with smooth entrance */}
+          {/* Subtle animated background particles */}
+          <div className="absolute inset-0">
+            {[...Array(12)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute h-2 w-2 rounded-full bg-white opacity-10"
+                style={{
+                  left: `${15 + i * 7}%`,
+                  top: `${20 + i * 5}%`,
+                }}
+                animate={{
+                  y: [0, -20, 0],
+                  opacity: [0.1, 0.3, 0.1],
+                  scale: [1, 1.2, 1],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  delay: i * 0.2,
+                  ease: 'easeInOut',
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Main logo container */}
           <motion.div
-            className="relative z-[9999] text-4xl font-semibold tracking-wide text-white md:text-6xl"
-            initial={{ scale: 0.8, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="relative z-20 text-5xl font-bold tracking-wider md:text-7xl"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'backOut' }}
           >
+            <div className="flex">
+              {letters.map((letter, index) => (
+                <motion.span
+                  key={index}
+                  className="inline-block text-white"
+                  style={{ color: '#ffffff' }}
+                  initial={{
+                    opacity: 0,
+                    y: 30,
+                    rotateX: 90,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    rotateX: 0,
+                  }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.08,
+                    ease: 'backOut',
+                  }}
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </div>
+
+            {/* Subtle breathing effect */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              De.Sma.Re.
-            </motion.div>
+              className="absolute inset-0 -z-10 rounded-lg bg-white/5"
+              animate={{
+                scale: [1, 1.05, 1],
+                opacity: [0, 0.1, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                delay: 1,
+                ease: 'easeInOut',
+              }}
+            />
           </motion.div>
 
-          {/* Elegant horizontal line with smooth expansion */}
+          {/* Circular reveal transition */}
           <motion.div
-            className="absolute left-1/2 top-1/2 h-0.5 origin-center bg-white"
-            initial={{ width: 0, opacity: 0 }}
-            animate={{ width: '60vw', opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.8, ease: 'easeInOut' }}
-            style={{ transform: 'translate(-50%, -50%)' }}
+            className="absolute inset-0 origin-center rounded-full bg-[#08A045]"
+            initial={{ scale: 0 }}
+            animate={{ scale: 0 }}
+            exit={{ scale: 15 }}
+            transition={{
+              duration: 0.8,
+              ease: 'circOut',
+            }}
+            style={{
+              clipPath: 'circle(0% at 50% 50%)',
+            }}
           />
 
-          {/* Smooth curtain reveal - Left panel */}
+          {/* Smooth fade overlay for seamless transition */}
           <motion.div
-            className="absolute left-0 top-0 z-40 h-full w-1/2 bg-[#08A045]"
-            initial={{ x: 0 }}
-            animate={{ x: '-100%' }}
-            transition={{ duration: 0.8, delay: 1.5, ease: 'easeInOut' }}
-          />
-
-          {/* Smooth curtain reveal - Right panel */}
-          <motion.div
-            className="absolute right-0 top-0 z-40 h-full w-1/2 bg-[#08A045]"
-            initial={{ x: 0 }}
-            animate={{ x: '100%' }}
-            transition={{ duration: 0.8, delay: 1.5, ease: 'easeInOut' }}
-          />
-
-          {/* Subtle background gradient animation */}
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-br from-[#08A045] via-[#0A8A42] to-[#08A045]"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.3 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            className="absolute inset-0 bg-[#08A045]"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              duration: 0.4,
+              delay: 0.2,
+              ease: 'easeOut',
+            }}
           />
         </motion.div>
       )}
