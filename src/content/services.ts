@@ -135,7 +135,7 @@ export const servicesContent = {
           title: 'Demolizioni civili',
           description:
             'Eseguiamo demolizioni civili su edifici residenziali, scuole, uffici e strutture pubbliche o private. Operiamo in contesti urbani e spazi limitati, applicando tecniche a basso impatto ambientale e garantendo la sicurezza di persone e strutture adiacenti.',
-          image: '/img/demolizioni-civ.jpg',
+          image: '/img/demo-civ.jpg',
         },
         {
           title: 'Demolizioni industriali',
