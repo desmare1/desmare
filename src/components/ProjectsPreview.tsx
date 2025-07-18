@@ -67,16 +67,16 @@ export default function ProjectsPreview() {
               </p>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-3 md:gap-4">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-2 md:gap-4">
                 {featuredProject.stats.map((stat, index) => (
                   <div
                     key={index}
-                    className="rounded-lg border border-ui-border bg-ui-section-bg p-3 text-center transition-all duration-300 hover:shadow-card"
+                    className="rounded-lg border border-ui-border bg-ui-section-bg p-3 text-center transition-all duration-300 hover:shadow-card sm:p-2 md:p-3"
                   >
-                    <div className="text-base font-bold text-text md:text-lg">
+                    <div className="text-base font-bold text-text sm:text-sm md:text-base lg:text-lg">
                       {stat.value}
                     </div>
-                    <div className="text-sm text-text-secondary">
+                    <div className="text-sm text-text-secondary sm:text-xs md:text-sm">
                       {stat.label}
                     </div>
                   </div>
